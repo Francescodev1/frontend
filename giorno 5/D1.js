@@ -17,7 +17,7 @@ data = 17;
 data = false;
 
 /* i principali data type sono 3: stringa, numeri e boolean vero/falso. le stringhe sono parole ma anche numeri ma vengono interpretati così come sono, 
-infatti se sonno due numeri contenuti in una stringa vengono messi uno accato all'altro. mentre i numeri sono numeri e sommati tra loro si avrà la somma. 
+infatti se sommo due numeri contenuti in una stringa vengono messi uno accato all'altro. mentre i numeri sono numeri e sommati tra loro si avrà la somma. 
 infine il boolean ci darà come risultato vero oppure falso*/
 
 /* ESERCIZIO 2
@@ -25,15 +25,16 @@ infine il boolean ci darà come risultato vero oppure falso*/
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-var name = 'Francesco'
+let name = "Francesco";
+console.log(name);
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-var num1 = 12;
-var num2 = 20;
-var somma = num1 + num2;
+let num1 = 12;
+let num2 = 20;
+let somma = num1 + num2;
 console.log(somma);
 
 /* ESERCIZIO 4
@@ -41,7 +42,7 @@ console.log(somma);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-var x = 12;
+let x = 12;
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
@@ -59,8 +60,8 @@ console.log(name)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let sottr = x - 4
-console.log(sottr)
+let diff = x - 4
+console.log(diff)
 /* ESERCIZIO 7
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
  Verifica che name1 sia diversa da name2 (suggerimento: è la stessa cosa di verificare che la loro uguaglianza sia falsa).
