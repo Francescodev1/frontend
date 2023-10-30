@@ -1,0 +1,189 @@
+/* IMPOSTAZIONI GENERALI */
+html{
+    font-size: 1em;
+   
+    
+    
+}
+
+body{
+ font-family: 'Poppins',sans-serif;
+ font-size: 1.2rem;
+ line-height: 1.5;
+ padding: 12px;
+ background: url(../img/sfondo.png) repeat center top;
+}
+
+hr{
+    display: none;
+}
+
+header, main, footer{
+    box-shadow: 1px 3px 3px #000 
+}
+
+
+/* HEADER */
+header {
+    padding: 20px;
+    margin:25px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,159,253,1) 100%); 
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: aliceblue;
+    
+}
+
+header div img, nav{
+    margin: 15px;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a::before{
+    content: "-> ";
+
+}
+
+header nav ul li a::after{
+    content: " <-";
+    
+}
+
+
+
+/* MAIN */
+
+main {
+    background-color: #fff;
+    padding: 1em;
+    margin: 20px 0;
+    
+}
+
+
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+section, aside div{
+    background-color: #ddd;
+    padding: 1em;
+}
+
+aside div{
+    border: 1px solid #000;
+}
+
+main h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #494747;
+}
+
+main h1{
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+main h1, main p, ul, ol, iframe, main h2, section, aside div{
+    margin-bottom: 1em;
+}
+
+h1 + p{
+    color:rgb(56, 61, 61);
+}
+
+ul, ol{
+    margin-left: 1.5em;
+}
+
+strong{
+    color: darkorchid;
+    font-weight: bold;
+}
+
+a{
+    color: aquamarine;
+}
+
+iframe{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+code{
+    background-color: rgb(178, 185, 185);
+    border: 1px solid #000;
+    border-radius:10px;
+}
+
+/* TABELLE */
+caption{
+    font-weight: bold;
+    font-style: italic;
+}
+
+table thead{
+    background-color: rgb(46, 46, 241);
+    color: #fff;
+}
+
+th, td{
+    padding: 1em;
+    text-align: center;
+
+}
+
+table tbody tr:nth-child(even){
+    background-color: beige;
+}
+
+table{
+    border-bottom: 3px solid #000;
+    
+}
+/* FORM */
+
+form input{
+    padding: 1em;
+    border: 0;
+    border-bottom: 1px dotted #000;
+}
+
+form button{
+    padding:0.5em;
+    background-color: rgb(4, 124, 160);
+    color: #fff;
+}
+
+aside div p:last-child{
+    text-align: right;
+
+}
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
+footer{
+    background: rgb(8, 48, 228);
+    background: linear-gradient(0deg, rgb(34, 90, 195) 0%, rgba(45,159,253,1) 100%);
+    text-align: center;
+    color: #fff;
+    padding: 1em;
+
+}
+
+footer a{
+    font-weight: bold;
+    color: rgb(176, 21, 248);
+}
