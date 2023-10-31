@@ -76,3 +76,14 @@ console.log(name1 == name2);
 
 console.log(name1 === name2) //false
 console.log(name1 === name2.toLowerCase()) //true
+
+
+
+// Operatori Logici | == | === | != | !== |
+// && -> VERO se entrambe le condizioni sono vere 
+// || -> VERO se almeno una delle due condizione è vera
+// ! -> VERO se la condizione è FALSA e il contrario
+let n3 = 5;
+let n4 = '5';
+let n5 = 10;
+console.log(n3 !== n4 || n3 > n5);
