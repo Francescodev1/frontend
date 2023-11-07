@@ -170,9 +170,6 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
     case "blue-gray":
       eyeColor["blue-gray"].push(character);
       break;
-    default:
-      // Gestisci eventuali colori degli occhi non previsti
-      break;
   }
 }
 
@@ -184,6 +181,7 @@ console.log(eyeColor);
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
+
 var crewMass = 0; // Inizializza la variabile crewMass a 0
 var i = 0; // Inizializza l'indice per il ciclo
 
@@ -191,7 +189,17 @@ while (i < starWarsCharacters.length) {
   crewMass += starWarsCharacters[i].mass; i++; }
 
 console.log("Massa totale dell'equipaggio: " + crewMass);
+*/
+/*
+let crewMass;
+let c = 0;
+while(c < starWarsCharacters.length){
+  let characters = starWarsCharacters[c];
+  crewMass += characters.mass;
+  c++;
+}
 
+console.log(crewmass);
 
 
 
