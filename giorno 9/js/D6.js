@@ -279,6 +279,13 @@ console.log(filmAnnoCorrente)
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
+
+let sumYear = (arr) => {
+  return arr.reduce((acc, film) => acc + Number(film.Year), 0)
+}
+
+console.log(sumYear(movies))
+/*
 console.log(typeof movies.Year);
 
 movies
@@ -289,6 +296,19 @@ console.log(totaleAnni)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
+let searchFilm = function(arr, id){
+  return arr.find(film => film.imdbID === id)
+}
+
+console.log(searchFilm(movies, 'tt4154756'))
+
+
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
+
+let searchIndexFilm = function (arr, Year){
+  return arr.findIndex(film => film.Year === 0)
+}
+
+console.log(searchIndexFilm(movies,'2012'))
