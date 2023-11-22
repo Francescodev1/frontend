@@ -1,0 +1,255 @@
+/* IMPOSTAZIONI GENERALI */
+
+
+html {font-size: 62.5%;}
+body { 
+    font-family: Poppins, 'Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding: 15px;
+    background-image: url('../img/sfondo.png');
+    background-position: center center;
+}
+* {box-sizing: border-box;}
+hr {display: none;} /* rimuove l'elemento */
+
+/* HEADER */
+header {
+    background: rgb(0,160,198);
+    background: linear-gradient(180deg, rgba(0,160,198,1) 0%, rgba(3,109,134,1) 68%);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 3px 3px #444;
+    margin-bottom: 1.5em;
+    padding: 2em 1.5em;
+}
+header div img {
+    margin-bottom: 20px;
+}
+header nav ul {
+    margin: 0;
+}
+header nav li {
+    list-style: none;
+}
+header nav li a {
+    color: white;
+    text-decoration: none;
+}
+header nav li a:hover {
+    color: red;
+}
+header nav li a::before {
+    content: "\22c6\0020";
+}
+
+/* MAIN */
+main {
+    background-color: #fff;
+    box-shadow: 0 3px 3px #444;
+    padding: 2em 1em;
+    margin-bottom:1.5em ;
+}
+section { 
+    background-color: #e3e3e3;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+section h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.7em;
+}
+p, address, ul, ol, dl, blockquote {
+    margin-bottom: 1.2em;
+}
+h1 + p {
+    color: #a0a0a0;
+}
+ul, ol {
+    margin-left: 2em;
+}
+a {
+    color: #00A0C6;
+    font-weight: bold;
+}
+strong {
+    color: #a02571;
+    font-weight: bold;
+}
+code {
+    background-color: #e3e3e3;
+    border: 1px solid #969494;
+    border-radius: 5px;
+}
+iframe {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+    border-radius: 20px;
+}
+
+/* TABELLE */
+table {
+    margin-bottom: 2em;
+}
+caption {
+    font-weight: bold;
+    font-style: italic;
+}
+thead tr {
+    background-color: #3f6bca;
+    color: #ffffff;
+}
+th, td {
+    padding: 12px 15px;
+    vertical-align: bottom;
+    text-align: center;
+}
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #3f6bca;
+}
+
+/* FORM */
+input {
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px dashed #333;
+}
+button {
+    padding: 4px 7px;
+    background-color: #3f6bca;
+    border: 0;
+    color: white;
+    font-weight: bold;
+}
+
+/* ELEMENTI NELL' ASIDE */
+aside h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+aside div {
+    background-color: #e3e3e3;
+    border: 1px solid #c3c3c3;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+aside div p:last-child {
+    margin-bottom: 0;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+
+/* FOOTER */
+footer {
+    background: rgb(53,53,53);
+    background: linear-gradient(0deg, rgba(53,53,53,1) 0%, rgba(5,85,103,1) 68%);
+    box-shadow: 0 3px 3px #444;
+    color: #f0f0f0;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.2rem;
+}
+footer a {
+    color: fuchsia;
+}
+
+
+@media screen and (min-width: 1024px) {
+    h1 {
+      text-align: left ;
+      font-size: 4rem; /* Aumenta la dimensione del font di h1 */
+    }
+  body {
+    margin: 0 100px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row; /* Allinea gli elementi in riga */
+    justify-content: space-between; /* Distribuisci gli elementi uniformemente lungo l'asse orizzontale */
+    align-items: center; /* Allinea gli elementi al centro verticalmente */
+    padding: 1em 1.5em;
+  }
+  
+  /* Stili per le immagini nel div del header */
+  header div {
+    display: flex;
+    align-items: center; /* Allinea gli elementi al centro verticalmente */
+  }
+  
+  /* Stili per la navigazione nel header */
+  header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+
+    table {
+      width: 70%; /* Rendi la tabella più larga */
+      margin: 0 auto; /* Centra la tabella */
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+  
+    section{
+        border-radius: 5%;
+
+    }
+    section,
+    iframe {
+      width: 48%; /* Rendi sia section che iframe largo il 48% della finestra */
+      height: 10px
+      margin-bottom: 1em;
+      box-sizing: border-box; /* Aggiunto box-sizing per includere il bordo nella larghezza */
+      float: left; /* Float per posizionare section e iframe uno accanto all'altro */
+    }
+    
+      iframe {
+        width: 48%; /* Rendi iframe largo il 48% della finestra */
+      }
+  
+    /* Rendi i div nell'aside inline-block per farli andare uno accanto all'altro */
+    aside div {
+        display: inline-block;
+        width: 30%; /* Regola la larghezza dei div */
+        margin-right: 0; /* Elimina lo spazio tra i div */
+        box-sizing: border-box; /* Aggiunto box-sizing per includere il bordo nella larghezza */
+      }
+      aside {
+        margin-left: 10%;
+        margin-right: 5%;
+        
+      }
+      
+  }
