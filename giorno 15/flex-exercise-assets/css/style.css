@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #742305;
+    margin: 0;
+}
+
+#container{
+    display: flex;
+}
+
+
+
+
+ /* Stili per gli header di diversi livelli */
+ h1,
+ h2 {
+   padding-left: 15px;  
+   font-weight: 800; 
+ }
+ 
+ h1 {
+   margin-top: 0;  
+   margin-bottom: 24px;  
+   line-height: 1; 
+ }
+ 
+ h2 {
+   padding-left: 15px;  
+   margin-top: 36px;  
+   margin-bottom: 10px;  
+ }
+ 
+ h3 {
+   font-weight: 800;  
+   margin-top: 0;  
+   line-height: 1;  
+ }
+ 
+ /* Stili per gli header in base alla larghezza dello schermo */
+ @media screen and (max-width: 575px) {
+   h1,
+   h2 {
+     text-align: center;  
+   }
+ }
+ 
+ @media screen and (min-width: 576px) {
+   h1 {
+     font-size: 44px;  
+   }
+   h2 {
+     font-size: 36px;  
+   }
+   h3 {
+     font-size: 24px; 
+   }
+ }
+
+
+
+
+
+
+
+/* Stile per il layout mobile quando la larghezza massima dello schermo è 767px */
+
+
+
+  @media screen and (max-width: 575px) {
+    nav {
+      min-width: 320px;  
+      min-height: 160px;  
+      border-radius: 100px;  
+      flex-wrap: wrap;  
+      margin: 20px 10px 36px;  
+    }
+    .tastoBig {
+      order: -1; 
+      flex: 1 1 100%;  
+    }
+  }
+  
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .tasto {
+      flex: 1 1 auto;  
+    }
+    nav > * {
+      margin: 0 3px;  
+    }
+  }
+
+
+
+
+  @media screen and (min-width: 768px){
+.container{
+    display: flex;
+
+}
+
+    nav {
+        flex-direction: column;
+        max-width: 300px;
+        align-items: stretch;
+        min-height: 100vh;
+    }
+
+    .tasto, .tastoBig{
+        flex-grow: 0;
+    }
+
+    .tastoBig{
+        display: flex;
+        padding: 20px;
+        order: -1;
+        flex-basis: 50px;
+    }
+
+    .tastoBig img{
+        flex: 1 0 60px;
+    }
+
+    .testoTastoBig{
+        flex: 2 1 120px;
+        font-size: 22pt;
+    }
+
+    main{
+        height: 100vh;
+        overflow: auto;
+        padding: 24px;
+    
+    }
+
+  }
+
+
+nav {
+    background-color: #fef7e2;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+nav *{
+    margin: 10px;
+    background-color: #ffdf7e;
+    border-radius: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .tasto{
+    flex: 1 0 100px;
+height: 50px;
+font-weight: 600;
+}
+
+nav .tastoBig{
+    height: 100px;
+    display: flex;
+    padding: 8px;
+}
+nav img{
+    height: 40px;
+}
+.testoTastoBig{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+.contenitoreCards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 25%;
+    padding: 15px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.cardImg{
+    object-fit: cover;
+    max-width: 100%;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+
+
+}
+
+.cardInfo{
+    flex: 1 0 120px;
+    background-color: #fef7e2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px 10px;
+    box-sizing: border-box;
+    border-bottom-right-radius: 50px; 
+    border-bottom-left-radius: 50px;
+}
+
+.card div{
+    width: 100%;
+}
+
+.prod{
+    flex: 2 0 66%;
+    display: flex;
+    align-items: center;
+}
+
+.main{
+    font-weight: bold;
+}
+
+.prodPrice{
+    flex: 1 0 33%;
+    text-align: center;
+}
+
+.prodTasto{
+    flex: 1 0 33%;
+    text-align: center;
+}
+
+.prodTasto button{
+    width: 30%; /* Larghezza del pulsante */
+    height: 90%; /* Altezza del pulsante */
+    background-color: #ffdf7e; /* Colore di sfondo del pulsante */
+    border: none; /* Nessun bordo */
+    border-radius: 40px; /* Angoli arrotondati del pulsante */
+    font-weight: bold; /* Imposta il peso del carattere in grassetto */
+    color: #742305; /* Colore del testo del pulsante */
+}
+
+
+
+/*article */
+article{
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+    gap: 30px;
+    background-color: #fef7e2;
+    border-radius: 30px;
+    padding: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+article img{
+    flex: 1 1 500px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+article .article__text{
+    flex: 1 1 400px;
+    line-height: 1.4;
+}
+
+/* Media query per adattare il layout su schermi di diverse dimensioni */
+  
+@media screen and (min-width: 576px) {
+    .card {
+      flex-basis: 50%; /* Su schermi larghi almeno 576px, ogni card occupa il 50% della larghezza */
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .card {
+      flex-basis: 33.333%; /* Su schermi larghi almeno 768px, ogni card occupa il 33.333% della larghezza */
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .card {
+      flex-basis: 25%; /* Su schermi larghi almeno 992px, ogni card occupa il 25% della larghezza */
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .card {
+      flex-basis: 20%; /* Su schermi larghi almeno 1200px, ogni card occupa il 20% della larghezza */
+    }
+  }
+  
+  /* Nascondi l'ultima card su schermi con larghezza compresa tra 576px e 767px */
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .card:last-child {
+      display: none;
+    }
+  }
+  
+  /* Nascondi la penultima card su schermi con larghezza compresa tra 768px e 991.8px */
+  @media screen and (min-width: 768px) and (max-width: 991.8px) {
+    .card:nth-last-child(2) {
+      display: none;
+    }
+  }
+  
+  /* Nascondi l'ultima card su schermi con larghezza compresa tra 768px e 1199.8px */
+  @media screen and (min-width: 768px) and (max-width: 1199.8px) {
+    .card:last-child {
+      display: none;
+    }
+  }
+  

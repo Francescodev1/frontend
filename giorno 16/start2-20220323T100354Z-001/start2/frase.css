@@ -1,0 +1,32 @@
+/*
+1 creazione del testo e formattazione di 1 parola da far ruotare
+2 inserimento delle altre 2 parole
+3 sovrapporre le 3 parole
+4 mostrare 1 parola e nascondere le altre 2
+5 animare 1 parola (fadein - fadeout con spostamento)
+6 animare le altre 2 parole
+7 ritardare progressivamente l'animazione delle altre 2 parole 
+*/
+
+
+
+body{
+    width: 100%;
+}
+
+#testoAlternato{
+display: flex;
+padding: 30px;
+margin: 100px 100px 100px 100px;
+    width: 40%;
+    border: 3px solid black;
+    font-weight: bold;
+}
+
+#testoAlternato:hover{
+    animation: miaFunc 2500ms ease-in-out 0.5s 1  ;
+    
+    
+}
+
+

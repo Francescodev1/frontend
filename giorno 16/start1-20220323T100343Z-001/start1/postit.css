@@ -1,0 +1,74 @@
+body {
+    width: 100%;
+  }
+
+  h2{
+    margin-top: 30px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+  
+  .lavagna {
+    border: 1px solid orange;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 520px; /* Larghezza del contenitore basata su 3 elementi per riga */
+    height: 400px;
+    background-color: rgb(87, 83, 83);
+    display: flex;
+    flex-wrap: wrap; /* Per consentire l'avvolgimento degli elementi su più righe */
+    justify-content: space-evenly;
+    align-items: center; /* Opzionale: per centrare gli elementi verticalmente */
+    box-shadow: 10px 10px 5px #888888
+}
+  
+  .lavagna div {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    margin: 5px; /* Aggiunto un margine tra gli elementi */
+    text-align: center;
+    align-items: center;
+    box-shadow: 3px 3px 5px #000000;
+    
+    
+  }
+  
+  .box1,
+  .box5,
+  .box7 {
+    background-color: #f7eec8;
+    transform: rotate(-5deg);
+  }
+  
+  .box2,
+  .box4,
+  .box8 {
+    background-color: #ccefb1;
+    transform: rotate(10deg);
+  }
+  
+  .box3,
+  .box6 {
+    background-color: #baaacf;
+    transform: rotate(-7deg);
+  }
+  
+
+  .lavagna div:hover{
+   
+    animation: miaFunc 2500ms ease-in-out 0.5s 1  ;
+    z-index: 9;
+    
+        
+  }
+
+  @keyframes miaFunc {
+    from { transform: rotate(0);  }
+    
+    to { transform: rotate(2.5, 2.5, 2.5); }
+
+    from {transform: scale(1);}
+    to {transform:scale(2);}
+}
+
