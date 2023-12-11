@@ -1,0 +1,9 @@
+html{
+    box-sizing: border-box;
+}
+
+
+.card:hover{
+    border: 5px solid red;
+}
+
